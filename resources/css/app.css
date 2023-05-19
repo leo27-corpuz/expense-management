@@ -1,0 +1,352 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    /* outline: red dashed 1px; */
+}
+
+body{
+    background: #EEF1F4;
+}
+.bar {
+    background: #28274F !important;
+    height: 5px !important;
+    border-radius: 10px !important;
+}
+#nprogress .peg {
+    box-shadow: none !important;
+}
+
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+.loading-container > p{
+    margin: auto 0;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    color: #1D1D41;
+}
+.disabledCursor {
+    cursor: not-allowed !important;
+}
+
+.slide-top-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-top-fade-leave-active {
+    transition: all 0.3s ease-in;
+}
+
+.slide-top-fade-enter-from,
+.slide-top-fade-leave-to {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+
+
+
+.sidebar > .body-siderbar > .per-branch > div > a{
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    padding: 20px 17px;
+    display: flex;
+    border-radius: 10px;
+    transition: all 0.5s ease-out;
+    color: #b6b5b5;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.sidebar > .body-siderbar > .per-branch > div > a:hover{
+    background: #28274F;
+    color: #ffffff;
+}
+.sidebar > .body-siderbar > .per-branch > div > a > i{
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.sidebar > .body-siderbar > .per-branch > div >  a > p{
+    font-size: 16px;
+    margin: auto 10px;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-out;
+}
+
+.main-useradmin{
+    width: calc(100% - 19em);
+    margin: 0 0 0 auto;
+    padding: 60px;
+}
+.main-useradmin > section > article > .title > p{
+    font-size: 30px;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+}
+.main-useradmin  > section > article  > .form-container{
+    width: 100%;
+    margin-top: 2em;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+}
+.main-useradmin > section > article  > .form-container > form{
+    width: 100%;
+}
+
+.add-data{
+    margin-top: 1.5em;
+    text-align: right;
+}
+.add-data > a > button{
+    background: #1D1D41;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 7px;
+    width: auto;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1.7px;
+    color: #b6b5b5;
+    transition: all 0.5s ease-out;
+}
+.add-data > a > button:hover{
+    color: #ffffff;
+    background: #28274F;
+}
+
+
+.back > a > button{
+    background: #1D1D41;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 7px;
+    width: auto;
+    font-size:16px;
+    cursor: pointer;
+    letter-spacing: 1.7px;
+    color: #b6b5b5;
+    transition: all 0.5s ease-out;
+}
+.back > a > button:hover{
+    color: #ffffff;
+    background: #28274F;
+}
+
+
+.main-useradmin > section > article  > .form-container{
+    width: 100%;
+    margin-top: 2em;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+}
+.main-useradmin > section > article  > .form-container > form{
+    width: 100%;
+}
+.main-useradmin > section > article  > .form-container > .title > p{
+    font-size:40px;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+}
+.main-useradmin > section > article  > .form-container > .title{
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+.successmessage{
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    margin-top: 3px;
+}
+
+.main-table{
+    width: 100%;
+    margin-top: 1.5em;
+    /* border: solid rgba(170, 170, 170, 0.2) 0.5px; */
+    border-radius: 8px 8px 0 0;
+    /* overflow: hidden; */
+}
+.main-table > .table{
+    border-collapse: collapse;
+    width: 100%;
+    background: var(--main-color-white);
+    overflow-x:scroll;
+    flex: 1 1 auto;
+}
+.deletion-container{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(211, 211, 211, 0.5);
+    z-index: 99;
+    height: 100vh;
+    padding: 30px;
+    display: grid;
+    place-items: center;
+}
+.bounce-enter-active {
+    animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+    animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+
+tbody{
+    width: 100%;
+    text-align: left;
+    border-left: solid rgba(170, 170, 170, 0.4) 0.5px;
+    border-right: solid rgba(170, 170, 170, 0.4) 0.5px;
+    overflow-y: auto;
+}
+tbody > tr td{
+    padding: 20px;
+    color: rgba(24, 24, 24, 0.5);
+    font-size: 14px;;
+    letter-spacing: 1px;
+    position: relative;
+    border-bottom: solid rgba(170, 170, 170, 0.4) 0.5px;
+}
+tbody > tr .table-elipses{
+    max-width: 22em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.actions{
+    position: relative;
+}
+.actions > .list-action{
+    display: flex;
+    grid-gap: 15px;
+    justify-content: center;
+}
+.actions > .list-action > div {
+    margin: auto 0;
+    position: relative;
+}
+.actions > .list-action > div > i{
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgba(185, 185, 185, 0.8);
+    transition: all 0.5s ease-out;
+}
+.actions > .list-action > div > .tip{
+    position: absolute;
+    top: -33px;
+    right: 0;
+    background: #28274F;
+    color: rgba(185, 185, 185, 0.8);
+    padding: 7px 15px;
+    border-radius: 10px;
+    display: none;
+    transition: all 0.5s ease-out;
+    font-size: 14px;;
+}
+.actions > .list-action > div:hover .tip{
+    display: inherit;
+}
+.actions > .list-action > div > i:hover{
+    color: #28274F;
+}
+
+.profile-view-container{
+    width: 100%;
+    margin-top: 2em;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.profile-col {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+    padding: 15px 10px;
+}
+.profile-col > :nth-child(1){
+    width: 20%;
+}
+.profile-col > :nth-child(1) > p{
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    color: #383838;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.profile-col > :nth-child(2){
+    width: 80%;
+}
+.profile-col > :nth-child(2) > p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #383838;
+    line-height: 1.5;
+}
+hr{
+    border: none;
+    height: 0.5px;
+    margin: 15px 0;
+    border-radius: 20px;
+    width: 100%;
+    background-color:rgba(185, 185, 185, 0.6);
+}
+
+.content > a > button{
+    background: #1D1D41;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    width: auto;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1.7px;
+    color: #b6b5b5;
+    transition: all 0.5s ease-out;
+}
+.content > a > button:hover{
+    color: #ffffff;
+    background: #28274F;
+}
